@@ -14,7 +14,7 @@
 	     <!-- warSourceExcludes是在编译周期进行完成后从src/main/webapp目录复制文件时忽略 -->   
 	     <!--<warSourceExcludes>hi.html</warSourceExcludes>  --> 
 	     <!-- packagingExcludes是在复制webapp目录完成后打包时忽略target/ 文件夹的文件 --> 
-	     <packagingExcludes>WEB-INF\*</packagingExcludes>  
+	     <packagingExcludes>WEB-INF\shanghai.*</packagingExcludes>  
 	    </configuration>    
 	   </plugin>    
 	  </plugins>    
