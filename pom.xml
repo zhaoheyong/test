@@ -4,4 +4,19 @@
   <artifactId>test</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
+  	<build>    
+	  <plugins>  
+	   <plugin>    
+	    <groupId>org.apache.maven.plugins</groupId>    
+	    <artifactId>maven-war-plugin</artifactId>    
+	    <version>2.1.1</version>    
+	    <configuration> 
+	     <!-- warSourceExcludes是在编译周期进行完成后从src/main/webapp目录复制文件时忽略 -->   
+	     <!--<warSourceExcludes>hi.html</warSourceExcludes>  --> 
+	     <!-- packagingExcludes是在复制webapp目录完成后打包时忽略target/ 文件夹的文件 --> 
+	     <packagingExcludes>WEB-INF\*</packagingExcludes>  
+	    </configuration>    
+	   </plugin>    
+	  </plugins>    
+	 </build>  
 </project>
