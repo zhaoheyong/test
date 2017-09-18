@@ -43,6 +43,16 @@
 	     <!--<warSourceExcludes>hi.html</warSourceExcludes>  --> 
 	     <!-- packagingExcludes是在复制webapp目录完成后打包时忽略target/ 文件夹的文件 --> 
 	     <packagingExcludes>${delFileName}</packagingExcludes>
+	     
+	                 <webResources>
+                        <resource>
+                            <directory>/</directory>
+                            <filtering>true</filtering>
+                        </resource>
+                    </webResources>
+	     
+	     
+	     
 	    </configuration>    
 	   </plugin>    
 	  </plugins>  
