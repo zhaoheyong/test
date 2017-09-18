@@ -3,8 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+ <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
 </head>
+<script type="text/javascript">
+$(function (){
+	$.getJSON("city.json", "", function(data) {
+		console.log(data);
+		$("#ha").val("");
+	});
+	});
+
+</script>
 <body>
-	${cityName}
+	哈哈哈哈
+	<input id="ha">
 </body>
 </html>
