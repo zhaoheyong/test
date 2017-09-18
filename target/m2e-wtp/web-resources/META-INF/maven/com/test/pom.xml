@@ -7,7 +7,8 @@
 	<profiles>  
     <profile>  
         <id>shanghai</id>  
-        <properties>  
+        <properties>
+        	<!-- 激活cityName属性为shanghai -->  
             <cityName>shanghai</cityName> 
             <!-- 写地区为上海时要排除的文件路径 -->
             <delFileName>shandong1.html,WEB-INF/shandong2.html,WEB-INF/classes/sandong.xml,WEB-INF/classes/contoller/ShandongController.class</delFileName>  
@@ -16,7 +17,8 @@
       
     <profile>  
         <id>shandong</id>  
-        <properties>  
+        <properties> 
+        	<!-- 激活cityName属性为shandong -->   
             <cityName>shandong</cityName>
             <!-- 写地区为山东时要排除的文件路径 -->
             <delFileName>shanghai1.html,WEB-INF/shanghai2.html,WEB-INF/classes/shanghai.xml,WEB-INF/classes/contoller/ShanghaiController.class</delFileName>   
@@ -28,10 +30,14 @@
     <resource>  
         <directory>${project.basedir}/src/main/resources</directory>  
         <filtering>true</filtering>  
+    </resource>
+    <resource>  
+        <directory>${project.basedir}/src/main/webapp</directory>  
+        <filtering>true</filtering>  
     </resource>  
 </resources> 
 
-	  <plugins>  
+     <plugins>  
 	   <plugin>    
 	    <groupId>org.apache.maven.plugins</groupId>    
 	    <artifactId>maven-war-plugin</artifactId>    
